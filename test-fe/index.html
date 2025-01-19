@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Video with Chapters</title>
+</head>
+<body>
+    <div id="video-container">
+        <video id="video" width="640" height="360" controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="timeline-markers"></div>
+    </div>
+
+    <input placeholder="Upload Video" type="file" id="video-upload" accept="video/mp4">
+    <button id="upload-button">Create Chapters for the Video</button>
+
+    
+    <ul class="chapters-list" id="chapters-list">
+        <div id="loader" class="loader" style="display: none;"></div>
+        <!-- Chapters will be dynamically added here -->
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html> 
